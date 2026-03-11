@@ -1,0 +1,62 @@
+{
+    // =========================
+    // 基础编辑体验（全局一致性）
+    // =========================
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.rulers": [100],
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": false,
+
+    // =========================
+    // Swift 专用（格式完全交给 SwiftFormat）
+    // =========================
+    "[swift]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null,
+        "files.trimTrailingWhitespace": true
+    },
+
+    // =========================
+    // 其他文本类型（避免误删有意义的尾空格）
+    // =========================
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[plaintext]": {
+        "files.trimTrailingWhitespace": false
+    },
+
+    // =========================
+    // 全局禁用 VS Code / 插件“伪格式化”
+    // =========================
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "never",
+        "source.organizeImports": "never"
+    },
+
+    // =========================
+    // 文件系统 & 性能优化
+    // =========================
+    "files.trimTrailingWhitespace": false,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+        "**/.build": true,
+        "**/DerivedData": true,
+        "**/Pods": true,
+        "**/Carthage": true,
+        "**/*.xcodeproj": true,
+    },
+
+    // =========================
+    // 搜索排除（非常重要）
+    // =========================
+    "search.exclude": {
+        "**/DerivedData": true,
+        "**/.build": true,
+        "**/Pods": true,
+        "**/Carthage": true
+    }
+}

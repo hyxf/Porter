@@ -1,0 +1,37 @@
+# =========================
+# 扫描范围
+# =========================
+excluded:
+  - Pods
+  - Carthage
+  - .build
+  - DerivedData
+
+# =========================
+# 禁用：已由 SwiftFormat 接管 or 纯风格争议
+# =========================
+disabled_rules:
+  - line_length
+  - trailing_whitespace
+  - opening_brace
+  - large_tuple
+  - shorthand_operator
+  - identifier_name
+  - vertical_whitespace
+  - todo
+
+# =========================
+# 启用：真正有价值的规则
+# =========================
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+  - weak_delegate
+  - redundant_nil_coalescing
+  - first_where
+
+# =========================
+# 复杂度（只警告，不阻断）
+# =========================
+cyclomatic_complexity:
+  warning: 20

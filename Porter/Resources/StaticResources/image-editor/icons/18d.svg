@@ -1,0 +1,11 @@
+<svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="55" cy="55" r="52" fill="#fff" opacity="0.88"/>
+  <circle cx="55" cy="55" r="46" stroke="#ff1744" stroke-width="9" fill="none"/>
+  
+  <text x="55" y="58" font-family="system-ui,sans-serif" 
+        font-size="48" font-weight="900" fill="#ff1744" 
+        text-anchor="middle" dominant-baseline="middle">18+</text>
+  
+  <!-- 可选小字 -->
+  <!-- <text x="55" y="90" font-size="18" fill="white" text-anchor="middle" opacity="0.9">ADULT ONLY</text> -->
+</svg>

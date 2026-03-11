@@ -1,0 +1,17 @@
+{
+  "activeGroup" : "Default",
+  "groups" : {
+    "Default" : [
+      "Porter/LaunchAtLogin/LaunchAtLogin.swift",
+      "Porter/Models/AlertItem.swift",
+      "Porter/Models/AppSettings.swift",
+      "Porter/Models/ServerError.swift",
+      "Porter/Models/ServerState.swift",
+      "Porter/PorterApp.swift",
+      "Porter/Services/HTTPServer.swift",
+      "Porter/ViewModels/ServerViewModel.swift",
+      "Porter/Views/ServerMenuView.swift",
+      "Porter/Views/SettingsView.swift"
+    ]
+  }
+}

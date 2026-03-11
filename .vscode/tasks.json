@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SwiftFormat: Format Project",
+      "type": "shell",
+      "command": "swiftformat .",
+      "problemMatcher": [],
+      "group": "none",
+      "presentation": {
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "SwiftFormat: Format Current File",
+      "type": "shell",
+      "command": "swiftformat \"${file}\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never"
+      }
+    },
+    {
+      "label": "SwiftLint: Lint (Normal)",
+      "type": "shell",
+      "command": "swiftlint lint --quiet",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "SwiftLint: Lint (Strict)",
+      "type": "shell",
+      "command": "swiftlint lint --strict",
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}

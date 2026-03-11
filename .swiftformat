@@ -1,0 +1,25 @@
+--indent 4
+--tabwidth 4
+--maxwidth 100
+
+--wraparguments beforefirst
+--wrapparameters beforefirst
+--wrapcollections beforefirst
+--wrapconditions beforefirst
+
+--closingparen same-line
+--self remove
+--stripunusedargs closure-only
+
+--commas inline
+--binarygrouping none
+--decimalgrouping none
+--hexgrouping none
+
+--elseposition same-line
+--guardelse same-line
+--voidtype void
+
+--exclude Pods
+--exclude Carthage
+--exclude .build
