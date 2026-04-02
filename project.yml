@@ -21,12 +21,15 @@ targets:
         CURRENT_PROJECT_VERSION: "7"
         SWIFT_VERSION: "5.9"
         ENABLE_APP_SANDBOX: NO
-
+    
+    resources:
+      - path: Porter/Assets.xcassets
+    
     info:
       path: Porter/Info.plist
       properties:
-        CFBundleName: Dev Source Switcher
-        CFBundleDisplayName: Dev Source Switcher
+        CFBundleName: Porter
+        CFBundleDisplayName: Porter
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSApplicationCategoryType: public.app-category.developer-tools
