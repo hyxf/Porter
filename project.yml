@@ -1,0 +1,34 @@
+name: Porter
+
+options:
+  bundleIdPrefix: xyz.billchiu
+  deploymentTarget:
+    macOS: "14.0"
+
+targets:
+  Porter:
+    type: application
+    platform: macOS
+
+    sources:
+      - path: Porter
+        type: group
+
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: xyz.billchiu.Porter
+        MARKETING_VERSION: "1.0.7"
+        CURRENT_PROJECT_VERSION: "7"
+        SWIFT_VERSION: "5.9"
+        ENABLE_APP_SANDBOX: NO
+
+    info:
+      path: Porter/Info.plist
+      properties:
+        CFBundleName: Dev Source Switcher
+        CFBundleDisplayName: Dev Source Switcher
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSApplicationCategoryType: public.app-category.developer-tools
+        LSUIElement: true
+        NSSupportsAutomaticGraphicsSwitching: true
